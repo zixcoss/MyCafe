@@ -1,16 +1,26 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Navbar from './components/Navbar'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <h1 class="text-3xl font-bold underline text-[#50d71e]">
-        Hello world!
-      </h1>
+      <Navbar />
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae autem alias, reiciendis incidunt voluptatem maiores, officiis sint explicabo at libero doloribus dolores ab, aperiam necessitatibus in cum suscipit unde rem nemo nesciunt voluptas? Minus possimus nostrum veritatis fuga temporibus at? Facilis harum quisquam deleniti nulla? Dolorem corrupti fuga deserunt eius.
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae autem alias, reiciendis incidunt voluptatem maiores, officiis sint explicabo at libero doloribus dolores ab, aperiam necessitatibus in cum suscipit unde rem nemo nesciunt voluptas? Minus possimus nostrum veritatis fuga temporibus at? Facilis harum quisquam deleniti nulla? Dolorem corrupti fuga deserunt eius.
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae autem alias, reiciendis incidunt voluptatem maiores, officiis sint explicabo at libero doloribus dolores ab, aperiam necessitatibus in cum suscipit unde rem nemo nesciunt voluptas? Minus possimus nostrum veritatis fuga temporibus at? Facilis harum quisquam deleniti nulla? Dolorem corrupti fuga deserunt eius.
+      </div>
+
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae autem alias, reiciendis incidunt voluptatem maiores, officiis sint explicabo at libero doloribus dolores ab, aperiam necessitatibus in cum suscipit unde rem nemo nesciunt voluptas? Minus possimus nostrum veritatis fuga temporibus at? Facilis harum quisquam deleniti nulla? Dolorem corrupti fuga deserunt eius.
+      </div>
     </>
   )
 }
