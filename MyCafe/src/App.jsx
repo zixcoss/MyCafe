@@ -1,27 +1,27 @@
-import { useState } from 'react'
 import './App.css'
-import Navbar from './components/Navbar'
+import { BrowserRouter, Routes, Route } from 'react-router'
+import MainLayout from './layouts/MainLayout'
+import Home from './pages/Home'
+import Contact from './pages/Contact'
+import Menu from './pages/Menu'
+import About from './pages/About'
+import NotFound from './pages/NotFound'
 
 
 function App() {
 
   return (
-    <>
-      <Navbar />
-      <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae autem alias, reiciendis incidunt voluptatem maiores, officiis sint explicabo at libero doloribus dolores ab, aperiam necessitatibus in cum suscipit unde rem nemo nesciunt voluptas? Minus possimus nostrum veritatis fuga temporibus at? Facilis harum quisquam deleniti nulla? Dolorem corrupti fuga deserunt eius.
-      </div>
-      <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae autem alias, reiciendis incidunt voluptatem maiores, officiis sint explicabo at libero doloribus dolores ab, aperiam necessitatibus in cum suscipit unde rem nemo nesciunt voluptas? Minus possimus nostrum veritatis fuga temporibus at? Facilis harum quisquam deleniti nulla? Dolorem corrupti fuga deserunt eius.
-      </div>
-      <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae autem alias, reiciendis incidunt voluptatem maiores, officiis sint explicabo at libero doloribus dolores ab, aperiam necessitatibus in cum suscipit unde rem nemo nesciunt voluptas? Minus possimus nostrum veritatis fuga temporibus at? Facilis harum quisquam deleniti nulla? Dolorem corrupti fuga deserunt eius.
-      </div>
-
-      <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae autem alias, reiciendis incidunt voluptatem maiores, officiis sint explicabo at libero doloribus dolores ab, aperiam necessitatibus in cum suscipit unde rem nemo nesciunt voluptas? Minus possimus nostrum veritatis fuga temporibus at? Facilis harum quisquam deleniti nulla? Dolorem corrupti fuga deserunt eius.
-      </div>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<MainLayout/>}>
+          <Route index element={<Home/>}/>
+          <Route path='contact' element={<Contact/>}/>
+          <Route path='menu' element={<Menu/>}/>
+          <Route path='about' element={<About/>}/>
+        </Route>
+        <Route path='*' element={<NotFound/>}/>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
