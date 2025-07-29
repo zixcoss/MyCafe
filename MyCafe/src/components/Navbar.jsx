@@ -25,7 +25,7 @@ function Navbar() {
   }, []);
 
   return (
-    <header className="sticky top-0 p-2 bg-white/50 backdrop-blur-sm drop-shadow-md">
+    <header className="sticky top-0 p-2 px-4 bg-white/50 backdrop-blur-sm drop-shadow-md">
       <div
         className={`flex justify-between items-center w-full mx-auto
         md:flex-col md:w-[90%] md:py-4 md:gap-8
