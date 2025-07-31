@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import { FaFacebook } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { NavLink } from "react-router";
 import link from "../utils/Link";
+import ScrollContext from "../utils/ScrollContext";
 
-const MenuPage = ({ isOpen, changePage }) => {
+const MenuPage = ({ isOpen }) => {
+
+  const {changePage} = useContext(ScrollContext);
+
   return (
     <>
       <nav

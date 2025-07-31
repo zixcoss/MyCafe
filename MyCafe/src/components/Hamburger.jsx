@@ -4,8 +4,6 @@ import { RxCross1 } from "react-icons/rx";
 
 const Hamburger = ({isOpen,openNavbar}) => {
 
-  const generateLink = () => {}
-
   return (
     <button onClick={openNavbar} className="relative z-10 w-[30px] h-[30px] md:hidden">
       <RxHamburgerMenu

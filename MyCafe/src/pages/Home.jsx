@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router";
 import MenuCard from "../components/MenuCard";
 
 const Home = () => {
@@ -9,6 +8,7 @@ const Home = () => {
         className="grid grid-cols-1 grid-rows-5 gap-3 my-5 font-roboto
         md:grid-rows-6
         lg:grid-cols-2 lg:grid-rows-4 lg:gap-10 lg:h-[1500px]
+        animate-fade
         "
       >
         <MenuCard
@@ -16,6 +16,7 @@ const Home = () => {
           image={
             "https://images.unsplash.com/photo-1569096651661-820d0de8b4ab?q=80&w=963&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           }
+          linkTo={"cs"}
           className={"md:row-span-2"}
         />
         <MenuCard
@@ -30,6 +31,7 @@ const Home = () => {
           image={
             "https://images.unsplash.com/photo-1542181961-9590d0c79dab?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           }
+          linkTo={"hospitality"}
         />
         <div className="w-[90%] m-auto p-5 text-center
             lg:row-span-2 animate-scrolling scroll-fade">
@@ -52,10 +54,11 @@ const Home = () => {
           image={
             "https://images.unsplash.com/photo-1527529482837-4698179dc6ce?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           }
+          linkTo={"cs"}
           className={"lg:row-span-2"}
         />
       </div>
-      <div className="w-[90%] m-auto pt-5 text-center animate-scrolling">
+      <div className="w-[90%] m-auto pt-6 text-center animate-fade">
           <h1 className="pb-4 text-xl">HEADER</h1>
           <p className="pb-4">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores

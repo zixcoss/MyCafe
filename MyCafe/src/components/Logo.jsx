@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router";
+import ScrollContext from "../utils/ScrollContext";
 
-const Logo = ({ isScroll, changePage }) => {
+const Logo = () => {
+
+  const {isScroll,changePage} = useContext(ScrollContext);
+
   return (
     <div
       className='bg-[url("https://plus.unsplash.com/premium_photo-1675435644687-562e8042b9db?q=80&w=749&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")]
