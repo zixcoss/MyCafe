@@ -14,7 +14,7 @@ const MenuLayout = () => {
               <NavLink
                 to={c.link}
                 className={({isActive})=>{
-                  return `py-2 px-4 border text-base 
+                  return `py-2 px-4 border rounded-sm text-base 
                   ${isActive ? "border-green-500"
                     :"border-black hover:border-green-500 duration-200"}`
                 }}
