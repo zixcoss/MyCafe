@@ -4,7 +4,7 @@ import FoodCate from '../utils/FoodCategories'
 
 const MenuLayout = () => {
   return (
-    <div className='h-1000 my-5 font-roboto'>
+    <div className='my-5 font-roboto'>
       <h1 className='text-4xl font-bold text-center'><i>Menus</i></h1>
       <div className='mt-10 flex flex-col gap-5 items-center
         md:flex-row md:justify-center'>

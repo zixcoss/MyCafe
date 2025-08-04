@@ -8,7 +8,7 @@ const Home = () => {
         className="grid grid-cols-1 grid-rows-5 gap-3 my-5 font-roboto
         md:grid-rows-6
         lg:grid-cols-2 lg:grid-rows-4 lg:gap-10 lg:h-[1500px]
-        animate-fade
+        animate-fade 
         "
       >
         <MenuCard
