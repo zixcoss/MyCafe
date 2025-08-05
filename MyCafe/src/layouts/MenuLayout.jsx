@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useEffect } from "react";
 import { Outlet,NavLink } from 'react-router'
 import FoodCate from '../utils/FoodCategories'
 
 const MenuLayout = () => {
+  useEffect(()=>{
+      document.title = "Menus | MyCafe";
+    },[]);
+
   return (
     <div className='my-5 font-roboto'>
       <h1 className='text-4xl font-bold text-center'><i>Menus</i></h1>

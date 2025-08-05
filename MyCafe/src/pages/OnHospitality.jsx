@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import HospitalityCard from "../components/HospitalityCard";
 import hospitality from "../utils/hospitality";
 import { Link } from "react-router";
 import awards from "../utils/awards";
 
 const OnHospitality = () => {
+  useEffect(()=>{
+      document.title = "Press | MyCafe";
+    },[]);
+
   return (
     <div className="my-5 animate-fade">
       <h1 className="font-roboto text-3xl text-center mb-8">ON HOSPITALITY</h1>
@@ -17,7 +21,6 @@ const OnHospitality = () => {
               image={h.image}
               text={h.title}
               linkTo={h.link}
-              className={"row-span-1 col-span-1"}
             />
           );
         })}

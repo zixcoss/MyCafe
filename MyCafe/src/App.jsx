@@ -11,6 +11,9 @@ import MenuLayout from "./layouts/MenuLayout";
 import Food from "./pages/Food";
 import Drink from "./pages/Drink";
 import Dessert from "./pages/Dessert";
+import History from "./pages/History";
+import Mission from "./pages/Mission";
+import Faqs from "./pages/Faqs";
 
 function App() {
   return (
@@ -27,6 +30,9 @@ function App() {
           </Route>
           <Route path="about" element={<About />} />
           <Route path="hospitality" element={<OnHospitality />} />
+          <Route path="history" element={<History />} />
+          <Route path="mission" element={<Mission />} />
+          <Route path="faqs" element={<Faqs />} />
         </Route>
         <Route path="*" element={<NotFound />} />
         <Route path="cs" element={<ComingSoon />} />
